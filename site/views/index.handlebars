@@ -2,30 +2,49 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
+            <li role="presentation" class="active"><a href="/">Home</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">OpenGraph Spy</h3>
       </div>
 
+{{#if url}}
+      <div class="panel panel-default">
+        <div class="panel-heading">{{url}}</div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#metadata-list md}}{{/metadata-list}}
+          </tbody>
+        </table>
+      </div>
+      <div>Check another site?</div>
+{{/if}}
+
       <div class="jumbotron">
         <p class="lead">Enter a webpage url to find open graph metadata:</p>
-        <div class="input-group input-group-lg">
-          <input type="text" class="form-control" placeholder="https://www.webpage.com" />
-          <span class="input-group-btn"><a class="btn btn-lg btn-success" href="#" role="button">Parse</a></span>
-        </div>
+        <form action="/" method="get">
+          <div class="input-group input-group-lg">
+            <input id="url" name="url" type="text" class="form-control" placeholder="https://www.webpage.com" />
+            <span class="input-group-btn"><button type="submit" class="btn btn-lg btn-success">Parse</button></span>
+          </div>
+        </form>
+        
+        <!--<div class="row marketing">
+          <div class="col-lg-12">
+            <h4>Try some common OpenGraph enabled sites:</h4>
+            <p>Site 1</p>
+            <p>Site 2</p>
+            <p>Site 3</p>
+          </div>
+        </div>-->
       </div>
 
-      <div class="row marketing">
-        <div class="col-lg-12">
-          <h4>Try some common OpenGraph enabled sites:</h4>
-          <p>Site 1</p>
-          <p>Site 2</p>
-          <p>Site 3</p>
-        </div>
-      </div>
       <div class="row marketing">
         <div class="col-lg-12">
           <h4>What is <a href="http://ogp.me">OpenGraph?</a></h4>
@@ -34,7 +53,7 @@
       </div>
 
       <footer class="footer">
-        <p>&copy; 2016 Company, Inc.</p>
+        <p>&copy; 2017</p>
       </footer>
 
     </div>
