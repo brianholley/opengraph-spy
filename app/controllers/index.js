@@ -32,6 +32,10 @@ Handlebars.registerHelper('metadata-list', function(dict, options) {
   return out;
 });
 
+module.exports = function (app) {
+  app.use('/', router);
+};
+
 router.get('/', function(req, res) {
   if (typeof req.query.url !== "undefined") {
     parseOpenGraphMetadata(req.query.url).then(md => {
@@ -44,5 +48,3 @@ router.get('/', function(req, res) {
     res.render('index', {});
   }
 });
-
-module.exports = router;
