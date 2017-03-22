@@ -20,14 +20,8 @@ module.exports = function (grunt) {
     less: {
       dist: {
         files: {
-          'public/css/style.css': 'public/css/style.less'
-        }
-      }
-    },
-    bootstrap: {
-      dist: {
-        files: {
-          'public/css/bootstrap.css': 'node_modules/bootstrap/dist/css/bootstrap.css'
+          'public/css/style.css': 'public/css/style.less',
+          'public/css/bootstrap.css': 'node_modules/bootstrap/dist/css/bootstrap.less'
         }
       }
     },
@@ -83,7 +77,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'less',
-    'bootstrap',
     'develop',
     'watch'
   ]);
