@@ -28,19 +28,37 @@ div.container {
   text-align: center;
 }
 
-.header {
-  margin-bottom: 30px;
-}
-
 .footer {
   text-align: center;
   width: 100%;
   margin-top: 30px;
 }
 
-@media screen and (min-width: 600px) {
+
+@media screen and (max-width: 768px) {
+   body {
+    padding: 10px;
+  }
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .header {
+    margin-bottom: 10px;
+  }
+  .panel-heading {
+    padding: 10px;
+  }
+  .metadata-table {
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) {
   body {
     padding: 50px;
+  }
+  .header {
+    margin-bottom: 30px;
   }
 }
 
