@@ -1,14 +1,17 @@
+@base: #E3EEF7;
+@highlight: #337ab7;
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a, a:hover, a:visited {
-  color: #337ab7;
+  color: @highlight;
   text-decoration: none;
 }
 
 .title {
-  color: #337ab7;
+  color: @highlight;
 }
 
 div.container {
@@ -16,16 +19,20 @@ div.container {
 }
 
 .jumbotron {
-  background-color: #E3EEF7;
+  background-color: @base;
 }
 
 .panel-heading.metadata-url {
-  background-color: #E3EEF7;
+  background-color: @base;
   font-weight: 800;
 }
 
 .metadata-table tfoot {
   text-align: center;
+}
+
+.blurb {
+  margin-bottom: 15px;
 }
 
 .footer {
