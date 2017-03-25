@@ -16,8 +16,7 @@ module.exports = function(app, config) {
   
   app.engine('handlebars', exphbs({
     layoutsDir: config.root + '/app/views/layouts/',
-    defaultLayout: 'main',
-    partialsDir: [config.root + '/app/views/partials/']
+    defaultLayout: 'main'
   }));
   app.set('views', config.root + '/app/views');
   app.set('view engine', 'handlebars');
