@@ -1,6 +1,9 @@
   <div class="container">
       <div class="header clearfix">
-        <a href="/"><h3 class="title">Open Graph Spy</h3></a>
+        <a href="/">
+          <img class="logo" src="/img/logo.png" />
+          <h3 class="title">Open Graph Spy</h3>
+        </a>
       </div>
 
 {{#if url}}
@@ -30,7 +33,7 @@
         <form action="/" method="get">
           <div class="input-group input-group-md">
             <input id="url" name="url" type="text" class="form-control" placeholder="https://www.webpage.com" />
-            <span class="input-group-btn"><button type="submit" class="btn btn-lg btn-primary">Parse</button></span>
+            <span class="input-group-btn"><button type="submit" class="btn btn-md btn-primary">Parse</button></span>
           </div>
         </form>
 

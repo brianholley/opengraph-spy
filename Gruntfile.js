@@ -38,6 +38,13 @@ module.exports = function (grunt) {
         ],
         tasks: ['develop', 'delayed-livereload']
       },
+      img: {
+        files: [
+          'public/favicon.ico',
+          'public/img/*'
+        ],
+        tasks: ['develop']
+      },
       css: {
         files: [
           'public/css/*.less'
