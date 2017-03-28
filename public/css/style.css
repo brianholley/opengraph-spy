@@ -8,10 +8,9 @@ a:visited {
   text-decoration: none;
 }
 .title {
+  margin-left: 50px;
   color: #074E99;
-}
-div.container {
-  max-width: 800px;
+  max-width: 300px;
 }
 .logo {
   width: 50px;
@@ -49,6 +48,9 @@ div.container {
   .header {
     margin-bottom: 10px;
   }
+  div.container {
+    max-width: 748px;
+  }
   .panel-heading {
     padding: 10px;
   }
@@ -62,5 +64,8 @@ div.container {
   }
   .header {
     margin-bottom: 30px;
+  }
+  div.container {
+    max-width: 850px;
   }
 }
