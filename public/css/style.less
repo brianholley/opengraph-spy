@@ -33,18 +33,34 @@ a, a:hover, a:visited {
   font-weight: 800;
 }
 
+.property-name {
+  overflow-wrap: break-word;
+}
+
+.metadata {
+  word-wrap: break-word;
+}
+
+.metadata-table {
+  table-layout: fixed;
+}
+
+.metadata-table tr th:nth-child(1){
+  width: 25%;
+  max-width: 150px;
+}
+
 .metadata-table tfoot {
   text-align: center;
 }
 
 .blurb {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .footer {
   text-align: center;
   width: 100%;
-  margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -65,7 +81,7 @@ a, a:hover, a:visited {
     padding: 10px;
   }
   .metadata-table {
-    width: auto;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
