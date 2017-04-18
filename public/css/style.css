@@ -46,6 +46,14 @@ a:visited {
 .blurb {
   margin-bottom: 20px;
 }
+.blurb .content-block {
+  padding: 0px 20px;
+}
+.sites li {
+  word-break: break-all;
+  list-style-type: none;
+  margin-bottom: 8px;
+}
 .footer {
   text-align: center;
   width: 100%;
