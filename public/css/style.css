@@ -25,6 +25,7 @@ a:visited {
 .panel-heading.metadata-url {
   background-color: #E5F3FF;
   font-weight: 800;
+  word-wrap: break-word;
 }
 .property-name {
   overflow-wrap: break-word;
