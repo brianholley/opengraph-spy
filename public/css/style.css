@@ -54,6 +54,9 @@ a:visited {
   list-style-type: none;
   margin-bottom: 8px;
 }
+.sites li div {
+  margin-bottom: 2px;
+}
 .footer {
   text-align: center;
   width: 100%;
