@@ -1,6 +1,6 @@
-var path = require('path'),
-    rootPath = path.normalize(__dirname + '/..'),
-    env = process.env.NODE_ENV || 'development';
+var path = require('path')
+var rootPath = path.join(__dirname, '..')
+var env = process.env.NODE_ENV || 'development'
 
 var config = {
   development: {
@@ -8,7 +8,7 @@ var config = {
     app: {
       name: 'opengraph-spy'
     },
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 3000
   },
 
   test: {
@@ -16,7 +16,7 @@ var config = {
     app: {
       name: 'opengraph-spy'
     },
-    port: process.env.PORT || 3000,
+    port: process.env.PORT || 3000
   },
 
   production: {
@@ -24,8 +24,8 @@ var config = {
     app: {
       name: 'opengraph-spy'
     },
-    port: process.env.PORT,
+    port: process.env.PORT
   }
-};
+}
 
-module.exports = config[env];
+module.exports = config[env]
